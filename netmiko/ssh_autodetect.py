@@ -97,6 +97,15 @@ SSH_MAPPER_DICT = {
         "priority": 99,
         "dispatch": "_autodetect_std",
     },
+    "cisco_xe": {
+        "cmd": "show version",
+        "search_patterns": [
+            "Cisco IOS XE Software",
+            r"IOS[ -][(]?XE[)]?",
+        ],
+        "priority": 99,
+        "dispatch": "_autodetect_std",
+    },
     "cisco_nxos": {
         "cmd": "show version",
         "search_patterns": [r"Cisco Nexus Operating System", r"NX-OS"],
